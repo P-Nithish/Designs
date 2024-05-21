@@ -1,0 +1,91 @@
+<div class="control-requests-container">
+  <div class="control-requests-header">
+    <div class="header-left">
+      <h2>Control requests</h2>
+      <span class="badge-count">41 new requests</span>
+    </div>
+    <div class="control-actions">
+      <button class="import-controls">
+        <img src="../../assets/upload-cloud-02.svg" alt=""> Import controls
+      </button>
+      <button class="add-new-control">
+        <img src="../../assets/plus.svg" alt=""> Add New Control
+      </button>
+    </div>
+  </div>
+  <p>List all the controls requested by the project team</p>
+  <div class="overview-header">
+    <div class="left-buttons">
+      <button class="view-all">View all</button>
+      <button class="backlog">Backlog (new request)</button>
+      <button class="under-review">Under review</button>
+    </div>
+    <div class="search-filter">
+      <div class="search-container">
+        <img src="../../assets/search.svg" alt="Search" class="search-icon">
+        <input type="text" alt="Search" placeholder="Search" class="search-input" />
+      </div>
+      <button class="filter-button">
+        <img src="../../assets/filter-lines.svg" alt="filter"> Filters
+      </button>
+    </div>
+  </div>
+  <div class="table-container">
+    <table class="control-requests-table">
+      <thead>
+        <tr>
+          <th class="table-heading">Control name</th>
+          <th class="table-heading">Type of Request</th>
+          <th class="table-heading">Priority Level</th>
+          <th class="table-heading">Requested date</th>
+          <th class="table-heading">Control Categories</th>
+          <th class="table-heading">Status</th>
+          <th class="table-heading"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Business and finance</td>
+          <td><span class="badge badge-new">New</span></td>
+          <td><span class="badge badge-high"><img src="../../assets/arrow-up.svg" alt="">High</span></td>
+          <td>22 Jan 2024</td>
+          <td><span class="category-cell">Agile</span></td>
+          <td><span class="status-badge under-review">Under review</span></td>
+          <td><button class="view-btn" (click)="openPopup()">View</button></td>
+        </tr>
+        <tr>
+          <td>Access Authorization Control</td>
+          <td><span class="badge badge-modification">Modification</span></td>
+          <td><span class="badge badge-low"><img src="../../assets/27.png" alt="">Low</span></td>
+          <td>20 Jan 2024</td>
+          <td><span class="category-cell">Cybersecurity</span></td>
+          <td><span class="status-badge pending-review">Pending Review</span></td>
+          <td><button class="view-btn" (click)="openPopup()">View</button></td>
+        </tr>
+        <tr>
+          <td>Data Encryption Protocol</td>
+          <td><span class="badge badge-new">New</span></td>
+          <td><span class="badge badge-high"><img src="../../assets/arrow-up.svg" alt="High">High</span></td>
+          <td>24 Jan 2024</td>
+          <td><span class="category-cell">ZeroTrust</span></td>
+          <td><span class="status-badge approved">Approved</span></td>
+          <td><button class="view-btn" (click)="openPopup()">View</button></td>
+        </tr>
+        <tr>
+          <td>Vulnerability Assessment Procedure</td>
+          <td><span class="badge badge-new">New</span></td>
+          <td><span class="badge badge-medium"><img src="../../assets/24.png" alt="High">Medium</span></td>
+          <td>28 Jan 2024</td>
+          <td><span class="category-cell">Cybersecurity</span></td>
+          <td><span class="status-badge pending-review">Pending Review</span></td>
+          <td><button class="view-btn" (click)="openPopup()">View</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <app-popup [isOpen]="isPopupOpen" (close)="closePopup()"></app-popup>
+</div>
+
+
+
+

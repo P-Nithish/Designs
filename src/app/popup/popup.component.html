@@ -1,0 +1,98 @@
+<div class="popup" *ngIf="isOpen">
+    <div class="popup-content">
+      <span class="close-button" (click)="closePopup()">
+        <img src="../../assets/Button close X.svg" alt="Close">
+      </span>
+      <div class="popup-header">
+        <div class="icon-box">
+          <img src="../../assets/hash-01.svg" alt="Hash Icon">
+        </div>
+        <div>
+          <h2>Access Authorization Control</h2>
+          <p>Control request id #AE005</p>
+        </div>
+      </div>
+      <div class="popup-body">
+        <h3>Access Authorization Control</h3>
+        <span class="badge badge-cybersecurity">Cybersecurity</span>
+        <div class="popup-section">
+          <div class="left-section">
+            <label>Control request type</label>
+          </div>
+          <div class="right-section">
+            <span class="badge badge-new">New</span>
+          </div>
+        </div>
+        <div class="popup-section">
+          <div class="left-section">
+            <label>Priority Level / Importance Level</label>
+          </div>
+          <div class="right-section">
+            <span class="badge badge-high">
+              <img src="../../assets/arrow-up.svg" alt="High"> High
+            </span>
+          </div>
+        </div>
+        <div class="popup-section">
+          <div class="left-section">
+            <label>Status</label>
+          </div>
+          <div class="right-section">
+            <span class="badge badge-pending">Pending Review</span>
+          </div>
+        </div>
+        <div class="popup-section">
+          <div class="left-section">
+            <label>Requester name</label>
+          </div>
+          <div class="right-section">
+            <div class="requester-info">
+              <img src="../../assets/img1.jpg" alt="User Icon" class="user-icon">
+              <div>
+                <span>Jessica</span>
+                <span class="project-name">Projects XYZ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h3>Control Details</h3>
+        <div class="popup-section control-details">
+          <div class="left-section">
+            <p>This is an Entry or Exit control?</p>
+            <p>What Agile category best suits this control?</p>
+            <p>Please indicate the Control Element and all Associated Levels</p>
+          </div>
+          <div class="right-section">
+            <p>Readiness Check (Entry)</p>
+            <p>Product Backlog Health</p>
+            <p>Have indicated the Control Element as 'ABC' and associated it with Levels A, B, and C in the provided documentation.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="popup-section">
+          <div class="left-section">
+            <label>Change status / Review</label>
+          </div>
+          <div class="right-section">
+            <select class="status-select">
+              <option>Send to Review</option>
+              <option>Under Review</option>
+              <option>Pending Review</option>
+              <option>Approve</option>
+              <option>Rejected</option>
+            </select>
+          </div>
+        </div>
+        <label>Notes to Steering committee</label>
+        <div class="popup-section notes-section">
+          <textarea rows="3" class="notes-textarea">This control appears to be best suited for the entire intake process; therefore, it is strongly recommended. Please consider this note for the Steering Committee's review.</textarea>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <button class="cancel-button" (click)="closePopup()">Cancel</button>
+        <button class="save-button">Save changes</button>
+      </div>
+    </div>
+  </div>
+  

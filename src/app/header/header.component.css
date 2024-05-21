@@ -1,0 +1,127 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.5em 1em;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  margin-right: 1em; 
+}
+
+.logo img {
+  height: 50px; 
+  margin-right: 0.5em;
+}
+
+.brand-name {
+  font-size: 1.5em;
+  font-weight: bold; 
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: left;
+  margin-left: 100px;
+}
+
+nav a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+  font-weight: bold;
+  padding: 0.5em 1em; 
+  border-radius: 4px;
+}
+
+nav a.active {
+  background-color: #ebebeb;
+  color: rgb(54, 54, 54);
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons img {
+  height: 20px; 
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.icons1 {
+  display: flex;
+  align-items: center;
+}
+
+.icons1 img {
+  height: 35px; 
+  margin-left: 1em;
+  margin-right: 4em;
+  cursor: pointer;
+}
+
+.profile {
+  border-radius: 50%;
+  height: 40px;
+}
+
+@media (max-width: 830px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    margin: 0em;
+  }
+
+  nav {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0em;
+  }
+
+  nav a {
+    margin: 0em;
+  }
+
+  .icons,
+  .icons1 {
+    justify-content: flex-start;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 40px;
+    margin: 0em;
+  }
+
+  .brand-name {
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  nav a {
+    padding: 0.3em 0.8em;
+    margin: 0;
+  }
+
+  .icons img,
+  .icons1 img {
+    height: 25px;
+    margin: 1;
+  }
+}

@@ -1,0 +1,166 @@
+.control-board {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.control-column {
+  flex: 1;
+  background-color: #f3f3f373;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-header h3 {
+  margin: 0;
+}
+
+.badge-count {
+  background-color: #fcfcfc;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #333;
+  border: 1px solid #e6e6e6 ;
+}
+
+.column-divider {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 1px;
+  background-color: #ececec;
+}
+
+.control-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.control-card h4 {
+  margin: 0 0 10px;
+}
+
+.control-card p {
+  color: #666;
+  margin: 0 0 15px;
+}
+
+.card-badges {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.right-badges {
+  display: flex;
+  gap: 5px;
+}
+
+.card-divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 1px;
+  background-color: #ecebeb;
+}
+
+.view-details {
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: #2B50E6;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: auto;
+  font-weight: bolder;
+}
+
+.view-details:hover {
+  background-color: #dbdbdb;
+}
+
+.badge {
+  padding: 3px 7px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+}
+
+.badge-agile {
+  border-radius: 300px;
+  border: 1px solid #d4d4d4;
+  color: #6c757d;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.badge-cybersecurity {
+  border-radius: 300px;
+  border: 1px solid #d4d4d4;
+  color: #6c757d;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.badge-new {
+  border-radius: 300px;
+  border: 1px solid #2b7ce6;
+  color: #2b7ce6;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.badge-modification {
+  border-radius: 300px;
+  border: 1px solid #24c7e0;
+  color: #24c7e0;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.badge-high {
+  border-radius: 300px;
+  border: 1px solid #17B26A;
+  color: #17B26A;
+  padding: 5px 10px;
+  font-weight: bold;
+  background-color: #88fd8452;
+}
+
+.badge-awaiting {
+  border-radius: 300px;
+  border: 1px solid #ffa807;
+  color: #ffa807;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .control-board {
+    flex-direction: column;
+  }
+
+  .control-column {
+    margin-bottom: 20px;
+  }
+
+  .control-card {
+    padding: 10px;
+  }
+
+  .column-divider, .card-divider {
+    margin-bottom: 10px;
+  }
+}
